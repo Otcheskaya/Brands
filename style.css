@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "TTLakesRegular";
+  src: url("fonts/TTLakes-Regular.woff") format(woff);
+}
+
+.mobile {
+  display: none;
+}
+
+.header {
+  font-family: "TTLakesRegular";
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 32px;
+}
+
+.list__button_show-all {
+  border: none;
+  background-color: transparent;
+  padding: 16px 24px;
+  font-family: "TTLakesRegular";
+  font-size: 16px;
+}
+
+.list__button_hide-all {
+  display: none;
+  border: none;
+  background-color: transparent;
+  padding: 16px 24px;
+  font-family: "TTLakesRegular";
+  font-size: 16px;
+}
+
+.brands {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  padding-left: 32px;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination,
+.swiper-scrollbar {
+  display: none;
+}
+
+/* .brands__lenovo_hidden,
+.brands__samsung_hidden,
+.brands__apple_hidden,
+ {
+  display: none;
+} */
+
+@media (max-width: 1120px) {
+  .brands {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px 24px;
+    padding-left: 24px;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .brands__sony,
+  .brands__viewsonic {
+    display: block;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next,
+  .swiper-pagination {
+    display: block;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .brands {
+    display: flex;
+  }
+
+  .list__button_show-all,
+  .list__button_hide-all {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .swiper-wrapper {
+    max-width: 320px;
+  }
+}
