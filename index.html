@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бренды</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header"><p>РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p></header>
+    <ul class="desktop brands">
+      <li class="brands__lenovo">
+        <img src="./images/lenovo.png" alt="Логотип Lenovo" />
+      </li>
+      <li class="brands__samsung">
+        <img src="./images/samsung.png" alt="Логотип Samsung" />
+      </li>
+      <li class="brands__apple">
+        <img src="./images/apple.png" alt="Логотип Apple" />
+      </li>
+      <li class="brands__viewsonic brands__viewsonic_hidden">
+        <img src="./images/viewsonic.png" alt="Логотип ViewSonic" />
+      </li>
+      <li class="brands__bosh">
+        <img src="./images/bosh.png" alt="Логотип Bosch" />
+      </li>
+      <li class="brands__hp">
+        <img src="./images/hp.png" alt="Логотип hp" />
+      </li>
+      <li class="brands__acer">
+        <img src="./images/acer.png" alt="Логотип acer" />
+      </li>
+      <li class="brands__sony brands__sony_hidden">
+        <img src="./images/sony.png" alt="Логотип SONY" />
+      </li>
+      <li class="hidden brands__lenovo_hidden">
+        <img src="./images/lenovo.png" alt="Логотип Lenovo" />
+      </li>
+      <li class="hidden brands__samsung_hidden">
+        <img src="./images/samsung.png" alt="Логотип Samsung" />
+      </li>
+      <li class="hidden brands__apple_hidden">
+        <img src="./images/apple.png" alt="Логотип Apple" />
+      </li>
+    </ul>
+    <section class="mobile swiper">
+      <ul class="brands swiper-wrapper">
+        <li class="swiper-slide brands__lenovo">
+          <img src="./images/lenovo.png" alt="Логотип Lenovo" />
+        </li>
+        <li class="swiper-slide brands__samsung">
+          <img src="./images/samsung.png" alt="Логотип Samsung" />
+        </li>
+        <li class="swiper-slide brands__apple">
+          <img src="./images/apple.png" alt="Логотип Apple" />
+        </li>
+        <li class="swiper-slide brands__viewsonic">
+          <img src="./images/viewsonic.png" alt="Логотип ViewSonic" />
+        </li>
+        <li class="swiper-slide brands__bosh">
+          <img src="./images/bosh.png" alt="Логотип Bosch" />
+        </li>
+        <li class="swiper-slide brands__hp">
+          <img src="./images/hp.png" alt="Логотип hp" />
+        </li>
+        <li class="swiper-slide brands__acer">
+          <img src="./images/acer.png" alt="Логотип acer" />
+        </li>
+        <li class="swiper-slide brands__sony">
+          <img src="./images/sony.png" alt="Логотип SONY" />
+        </li>
+        <li class="swiper-slide brands__lenovo_hidden">
+          <img src="./images/lenovo.png" alt="Логотип Lenovo" />
+        </li>
+        <li class="swiper-slide brands__samsung_hidden">
+          <img src="./images/samsung.png" alt="Логотип Samsung" />
+        </li>
+        <li class="swiper-slide brands__apple_hidden">
+          <img src="./images/apple.png" alt="Логотип Apple" />
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-scrollbar"></div>
+    </section>
+    <div class="list">
+      <button class="list__button list__button_show-all">
+        <img src="./images/exp.svg" alt="Иконка" />
+        <span>Показать все</span>
+      </button>
+      <button class="list__button list__button_hide-all">
+        <img src="./images/exp2.svg" alt="Иконка" /> <span>Скрыть</span>
+      </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>

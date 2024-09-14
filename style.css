@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "TTLakesRegular";
+  src: url("fonts/TTLakes-Regular.woff") format(woff);
+}
+
+.mobile {
+  display: none;
+}
+
+.header {
+  font-family: "TTLakesRegular";
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 32px;
+}
+
+.list__button_show-all {
+  border: none;
+  background-color: transparent;
+  padding: 16px 24px;
+  font-family: "TTLakesRegular";
+  font-size: 16px;
+}
+
+.list__button_hide-all {
+  display: none;
+  border: none;
+  background-color: transparent;
+  padding: 16px 24px;
+  font-family: "TTLakesRegular";
+  font-size: 16px;
+}
+
+.brands {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 32px;
+  padding-left: 32px;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination,
+.swiper-scrollbar {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1120px) {
+  .brands {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 24px;
+    padding-left: 24px;
+  }
+
+  .brands__sony_hidden,
+  .brands__viewsonic_hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .brands__sony,
+  .brands__viewsonic {
+    display: block;
+  }
+
+  .swiper-pagination {
+    display: block;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .brands {
+    display: flex;
+  }
+
+  .header {
+    padding: 16px;
+  }
+
+  .list__button,
+  .list__button {
+    opacity: 0;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .swiper-wrapper {
+    max-width: 320px;
+  }
+}
